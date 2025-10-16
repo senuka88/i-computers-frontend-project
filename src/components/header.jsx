@@ -8,7 +8,7 @@ export default function Header(){
             
             <h1>My shop</h1>
           
-        </header>
+        </header> //fghth
     )
 
     //userdata below the header is imported to the header function below "My shop" heading through separate file creation
