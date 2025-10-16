@@ -6,7 +6,7 @@ export default function Test(){
    const[status, setStatus]=useState("🌞") //first value given as status variable and second value as setStatus function that has sun emoji showing on
 //    we get an array containing two things from a useState hook , in this case a and b
 
-//first value is a variable and second is a function
+//first value is a variable and second is a function as follows
 
 
     return(
