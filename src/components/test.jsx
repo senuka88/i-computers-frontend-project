@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Test(){
+export default function Test() {
 
    const[count,setCount]= useState(0) //whatever value we place inside useState() is the beginning value of the first value variable
    const[status, setStatus]=useState("🌞") //first value given as status variable and second value as setStatus function that has sun emoji showing on

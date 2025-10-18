@@ -1,15 +1,27 @@
+import{Route,Routes} from "react-router-dom";
 import Header from "../components/header";
 
 export default function HomePage(){
 
     return(
 
-        <div className="w-full h-full">
+        <div className="w-full h-full overflow-y-scroll max-h-full">
 
         <Header/>
 
-        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, augue vel vulputate tristique, sapien lorem efficitur nisl, nec scelerisque magna nunc id justo. Nullam lacinia, velit sed suscipit dapibus, sapien ipsum suscipit felis, sit amet accumsan eros arcu eget enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer dictum dolor vel sagittis blandit. Sed porttitor lorem nec tellus tincidunt congue. Donec ut pretium libero. Proin venenatis malesuada lorem, a tincidunt metus suscipit a. Ut feugiat ligula vel nulla interdum tempus. Vestibulum vitae erat nec urna varius fermentum sed ut nulla. Duis accumsan lacus sit amet sapien luctus, id tincidunt lectus pharetra. Integer dignissim sapien ac leo tempor gravida. Donec euismod lacus quis magna bibendum, nec varius leo eleifend.
-</h1>
+       <div className="w-full min-h-[calc(100%-100px)]">
+
+        <Routes>
+
+            <Route path="/" element={<h1>Home Page</h1>}/>
+            <Route path="/products" element={<h1>Product Page</h1>}/>
+            <Route path="/about" element={<h1>About Page</h1>}/>
+            <Route path="/contact" element={<h1>Contact Page</h1>}/>
+            <Route path="/*" element={<h1>Page not found</h1>}/>
+
+        </Routes>
+
+       </div>
 
         </div>
     )
